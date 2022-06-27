@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function Datedisply(){
+        const d = new Date();
+        console.log(d);
+        document.getElementById("demo").innerHTML = d;
+        }
+        function Dat(){
+            const d1 = new Date();
+        console.log(d1);
+        document.getElementById("demo").innerHTML = d1.getDay();
+        var arr=["Sunday","Monday","Thursday","Wednesday","Thuday","Friday","Saturday"];
+        console.log(arr[0]);
+        var Day=d1.getDay();
+        console.log(arr[Day]);
+        document.getElementById("demo").innerHTML =arr[Day];
+        }
+        function mth(){
+            const d2 = new Date();
+            console.log(d2);
+            document.getElementById("demo").innerHTML = d2.getMonth() + 1;
+        }
+        function year(){
+            const d3 = new Date();
+            document.getElementById("demo").innerHTML = d3.getFullYear();
+        }
+        function hour(){
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d.getHours();
+        }
+        </script>
+</head>
+<body>
+   
+&nbsp;&nbsp;<h1 id="h1">Day of Week</h1>
+<p id="demo"></p>
+<!-- <button type="Date" onClick="Date();"></button> -->
+<button type="button"onClick="Datedisply()" id="da">Date</button>
+<button type="button"onClick="Dat();" id="dat">Day</button>
+<button type="button"onClick="mth();"id="mth">Month</button>
+<button type="button"onClick="year();"id="yr">Year</button>
+<button type="button"onClick="hour();"id="hr">Hour</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>word</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+  <!-- <style media="screen">
+  
+
+  </style> -->
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="container">
+        Enter your message
+        <textarea
+          id="input-textarea"
+          rows="12"
+          placeholder="Text here..."
+        ></textarea>
+      </div>
+      <div class="count">
+        <div>
+          <h5 id="word-count">0</h5>
+          <p>Words</p>
+        </div>
+        <div>
+          <h5 id="charac-count">0</h5>
+          <p>Characters</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Script -->
+    <script type="text/javascript">
+    let inputTextArea = document.getElementById("input-textarea");
+    let characCount = document.getElementById("charac-count");
+    let wordCount = document.getElementById("word-count");
+
+    inputTextArea.addEventListener("input", () => {
+      characCount.textContent = inputTextArea.value.length;
+      let txt = inputTextArea.value.trim();
+      wordCount.textContent = txt.split(/\s+/).filter((item) => item).length;
+    });
+    </script>
+  </body>
+</html>

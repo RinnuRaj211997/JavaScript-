@@ -1,0 +1,23 @@
+#id{
+    text-align:center;
+    font-weight:bold;
+}
+
+#da{
+    background-color: aquamarine;
+    height:20%;
+    
+}
+#dat{
+    background-color:rgb(51, 211, 48);
+}
+#mth{
+    background-color:cyan;
+}
+#yr{
+    background-color:rgb(229, 98, 174);
+}
+#hr{
+    background-color:plum;
+    padding: left 2px;
+}

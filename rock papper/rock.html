@@ -1,0 +1,68 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="header">
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,
+				initial-scale=1.0">
+	<link rel="stylesheet" href="rk.css">
+	<title>Rock Paper Scissor</title>
+</head>
+<body id="body">
+	<section class="game">
+		<!--Title -->
+		<div class="title">Rock Paper Scissor</div><br><br>
+		
+		<!--Display Score of player and computer -->
+		<div class="score">
+			<div class="playerScore">
+				<h2>User</h2>
+				<p class="p-count count">0</p>
+
+			</div>	
+			<div class="computerScore">
+				<h2>Computer</h2>
+				<p class="c-count count">0</p>
+
+			</div>
+		</div>
+	
+		<div class="move">Computer trided to block your paper with rock and failed... You Won</div><br><br>
+		
+		<!--Number of moves left before game ends -->
+		<div class="movesleft">Moves Left: 10 </div>
+		
+		<!--Options available to player to play game -->
+		<div class="options">
+			<button class="rock">Rock</button>
+			<button class="paper">Paper</button>
+			<button class="scissor">Scissors</button>
+            <!-- <div class="choice" id="rock">
+                <img src="https://tejeshwer25.github.io/Rock_Paper_scissors/images/rock.png" />
+            </div>
+    
+            <div class="choice" id="paper">
+                <img src="https://tejeshwer25.github.io/Rock_Paper_scissors/images/paper.png" />
+            </div>
+    
+            <div class="choice" id="scissor">
+                <img src="https://tejeshwer25.github.io/Rock_Paper_scissors/images/scissor.png" />
+            </div> -->
+
+		</div><br><br>
+		<div class="action_text">
+            <p>Make Your Choice Now!</p>
+    </div>
+		<!--Final result of game -->
+		<div class="result"></div>
+		
+		<!--Reload the game -->
+		<button class="reload"></button>
+
+	</section>
+
+	<script src="app.js"></script>
+</body>
+</html>

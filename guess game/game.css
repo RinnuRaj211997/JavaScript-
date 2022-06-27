@@ -1,0 +1,14 @@
+.container{
+    background-color:aqua;
+    height:200px;
+    margin-left: 10px;
+    margin-top: 100px;
+
+}
+#tt{
+    padding-left: 10px;
+    width: 10%;
+}
+#ch{
+    background-color:rgb(0, 255, 4);
+}
